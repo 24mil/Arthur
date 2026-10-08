@@ -1,20 +1,16 @@
-<p align="center"><img src="project-mark.svg" width="72" height="72" alt="Clash Royale AI"></p>
-<h1 align="center">Clash Royale AI</h1>
-<p align="center">
-  <img src="badge-engine.svg" alt="Rust engine">
-  <img src="badge-ml.svg" alt="Python and PyTorch">
-  <img src="badge-model.svg" alt="6.67M parameters">
-</p>
+# Clash Royale AI
+
+Rust simulator · Python / PyTorch · 6.67M parameters
 
 An AI player built around a **Rust battle simulator**, a neural policy and learning from human replays and self-play. My work covers system design, experiments, integration and validation across the stack.
 
 ## Watch it choose a move
 
-**One 24-second demo:** three card plays and one wait. See the card percentages, selected placement and the resulting battle in the project's existing replay viewer.
+**12-second demo, at 2× speed:** three card plays and one wait. Card percentages, selected placement and the resulting battle use the project's existing replay viewer.
 
-https://github.com/user-attachments/assets/a47982f9-31f2-49e1-93ad-d5e7afd7db02
+https://github.com/user-attachments/assets/3323f397-0c3a-437c-83ef-01f9fe6bc50a
 
-Frozen **L10 EMA @100 · Rust v45**. These are recorded simulator decisions; percentages describe action choices, not win chances. A real-game recording with matching annotations will follow separately.
+Frozen **L10 EMA @100 · Rust v45**. These are recorded simulator decisions; percentages describe action choices, not win chances. An annotated real-game recording will follow separately.
 
 ## Engineering that improved results
 
@@ -25,11 +21,13 @@ Frozen **L10 EMA @100 · Rust v45**. These are recorded simulator decisions; per
 
 [Models, opponents, methods and limitations](EVIDENCE.md). Superhuman play remains the research goal.
 
-## How it works
+## Neural network and learning
 
 ![Observation, neural architecture, action and learning pipeline](pipeline.svg)
 
-The Python prototype led to the native Rust engine. Human replay commands provide imitation examples; PPO, frozen opponents and exploiters support further learning. Real-game integration uses memory-derived observations.
+The **U-Net** processes the board. **Transformer blocks** process troops and recent events. Their features are combined; separate heads choose the action, card, placement, ability carrier and wait duration. The checkpoint has **6.67M parameters**, with **5.15M in the policy path**. A separate critic learns during training.
+
+Human replays teach decisions; PPO self-play develops them further. Rust replaced the historical Python engine. Real-game integration uses memory-derived observations.
 
 **Implementation, weights and datasets remain private**, available for discussion with internship teams. Development includes AI-assisted coding and analysis. [Contact Arthur](https://github.com/24mil).
 
