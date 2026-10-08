@@ -12,7 +12,7 @@ An AI player built around a **Rust battle simulator**, a neural policy and learn
 
 **One 24-second demo:** three card plays and one wait. See the card percentages, selected placement and the resulting battle in the project's existing replay viewer.
 
-https://github.com/user-attachments/assets/c22307cc-30fa-4954-bc89-8c1a3ac4f90a
+https://github.com/user-attachments/assets/a47982f9-31f2-49e1-93ad-d5e7afd7db02
 
 Frozen **L10 EMA @100 · Rust v45**. These are recorded simulator decisions; percentages describe action choices, not win chances. A real-game recording with matching annotations will follow separately.
 
