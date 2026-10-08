@@ -1,29 +1,126 @@
-# Clash Royale AI — an engineering case study
+<p align="center">
+  <img src="project-mark.svg" width="128" height="128" alt="Clash Royale AI project mark">
+</p>
 
-[![Project overview: simulator, real capture and model](cover.jpg)](https://24mil.github.io/Arthur/)
+<h1 align="center">Clash Royale AI</h1>
 
-**A visual portfolio by Arthur: building, training, evaluating and deploying a game-playing AI.**
+<p align="center">
+  <img src="badge-engine.svg" alt="Engine: Rust">
+  <img src="badge-ml.svg" alt="ML: Python and PyTorch">
+  <img src="badge-model.svg" alt="Model: 6.67 million parameters"><br>
+  <img src="badge-tick.svg" alt="Engine tick: 50 milliseconds, 20 Hz">
+  <img src="badge-learning.svg" alt="Learning: imitation and PPO">
+  <img src="badge-code.svg" alt="Implementation: private">
+</p>
 
-[Watch the gallery →](https://24mil.github.io/Arthur/) · [90-second overview](https://24mil.github.io/Arthur/#overview) · [Architecture](https://24mil.github.io/Arthur/#architecture) · [Experimental evidence](EVIDENCE.md)
+<p align="center">
+  <a href="overview.mp4">90-second overview</a> ·
+  <a href="#the-model">Model architecture</a> ·
+  <a href="#learning-from-human-games">Human learning</a> ·
+  <a href="#what-the-experiments-show">Results</a> ·
+  <a href="EVIDENCE.md">Methods and evidence</a>
+</p>
 
-I own the project's direction, experiments, integration and validation across the stack. It began with an inspectable Python battle simulator and developed into a native Rust engine, a PyTorch player, human-replay learning, self-play evaluation and a real-game deployment harness.
+An end-to-end game-playing AI project by **Arthur**: battle simulation, a neural player, human-replay learning, self-play and real-game integration. I own the direction, experiments, integration and validation across the stack. **Application code, weights and datasets stay private.**
 
-The frozen model highlighted here has **6,672,466 parameters**, including **5,152,965 in its policy path**. It combines spatial processing with entity/event transformers and chooses actions in stages: play or wait, card, placement, ability carrier and wait duration. The training critic is separate from deployed actor inputs.
+## Rust battle simulator
 
-The gallery shows eight short demonstrations:
+The current engine runs movement, targeting, combat, card cycles and deployment mechanics in Rust. This is the **existing project replay viewer**, displaying frozen native frames with its own playback controls, unit inspection and HP display.
 
-| Build | Learn and decide | Validate and deploy |
-|---|---|---|
-| [Python prototype](https://24mil.github.io/Arthur/#python-prototype) | [Neural probabilities](https://24mil.github.io/Arthur/#neural-decisions) | [Memory observations](https://24mil.github.io/Arthur/#memory-observations) |
-| [Rust battle engine](https://24mil.github.io/Arthur/#rust-engine) | [Engine search](https://24mil.github.io/Arthur/#engine-search) | [Deployment architecture](https://24mil.github.io/Arthur/#deployment) |
-| | [Human learning](https://24mil.github.io/Arthur/#human-learning) | [Self-play workflow](https://24mil.github.io/Arthur/#self-play) |
+[![Existing replay viewer displaying the frozen Rust battle](rust-engine.gif)](rust-engine.mp4)
 
-Two findings capture the engineering approach. Fixing an imitation model's evaluation interface changed its simulator score against L10 from **7.4% to 67.2%**, without retraining. Public-belief engine search scored **+99 relative simulator Elo [74, 125]** against the same network without search, across 512 games. [Methods and limits](EVIDENCE.md).
+[Full viewer recording](rust-engine.mp4) · L10 EMA @100, native_v45 · sped-up recorded states. Unexported fields are labeled; this is a bounded illustration, not a fidelity or strength test.
 
-The research objective is superhuman play; that has **not** been established. Simulator results, historical phone footage and offline integration evidence are labeled separately. A fresh on-phone policy recording remains pending device availability.
+<details>
+<summary><strong>Python prototype — historical</strong></summary>
 
-**Implementation stays private.** This repository contains only presentation material and the static gallery. Code can be discussed privately with internship teams. Development includes AI-assisted coding and analysis; experiments and integration are validated against recorded evidence.
+The original implementation established the inspectable simulation workflow. Rust is now the behavioral authority. This bounded, scripted scenario is shown through the same project viewer.
 
-[GitHub profile / contact](https://github.com/24mil)
+[![Historical Python simulation in the existing replay viewer](python-prototype.gif)](python-prototype.mp4)
 
-This material is unofficial and is not endorsed by Supercell. Gameplay belongs to Supercell; see the [Fan Content Policy](https://supercell.com/en/fan-content-policy/).
+[Full recording](python-prototype.mp4)
+
+</details>
+
+## The model
+
+Spatial board features and entity/event tokens pass through spatial processing, transformers and feature fusion. Separate heads choose the action type, card, placement, ability carrier and waiting duration.
+
+![Player V2 architecture, with the training critic outside the deployed actor's input path](architecture.svg)
+
+The loaded **L10 EMA @100** checkpoint contains **6,672,466 parameters**, including **5,152,965 in the policy path**. The critic is a training component.
+
+<details>
+<summary><strong>Recorded probabilities and placement heatmaps</strong></summary>
+
+These are offline diagnostic figures from actual frozen policy outputs, not a recreated application interface or a verbal explanation of the model's reasoning.
+
+[![Recorded policy probability and placement diagnostics](neural-decisions.gif)](neural-decisions.mp4)
+
+[Full diagnostic sequence](neural-decisions.mp4) · [Inspect one decision](decision-detail.jpg)
+
+</details>
+
+## Learning from human games
+
+Recorded card choices, placements and ability markers feed Rust reconstruction and imitation learning. Recorded commands and reconstructed board state remain distinct; unsupported labels are masked.
+
+![Human learning, self-play and evaluation workflow](learning.svg)
+
+<details>
+<summary><strong>Recorded actions and self-play demonstrations</strong></summary>
+
+[![Recorded placement markers and the learning workflow](human-learning.gif)](human-learning.mp4)
+
+[Recorded-action demonstration](human-learning.mp4) · Placement markers are not recorded troop trajectories. Level 16 does not establish Ultimate Champion league.
+
+[![Frozen opponents, exploiters and evaluation workflow](self-play.gif)](self-play.mp4)
+
+[Self-play walkthrough](self-play.mp4) · Workflow illustration; no active training run is implied.
+
+</details>
+
+## Engine search
+
+Candidate actions are compared through simulated futures. A public belief supplies unknown opponent state; the candidate scores and selected branch shown here are recorded outputs.
+
+[![Candidate actions, rollout scores and selected simulated future](engine-search.gif)](engine-search.mp4)
+
+[Full search diagnostic](engine-search.mp4) · Five-second rollouts; no additional deployments; six recorded searches with zero audited hidden reads.
+
+## Real-game observations and deployment
+
+The deployed observation route uses **memory-derived state**. The capture below shows the existing game interface. It is an archived **human TV Royale replay**, not the showcased model playing.
+
+<p align="center"><a href="deployment.mp4"><img src="deployment.gif" width="420" alt="Cropped historical TV Royale game capture; human replay, not model gameplay"></a></p>
+
+[Full capture](deployment.mp4) · Recorded 8 September 2026 · Player/clan identification cropped out.
+
+![Observation, policy, optional search, command execution and validation boundaries](system.svg)
+
+<details>
+<summary><strong>Inspect the archived observation outputs</strong></summary>
+
+The diagnostic uses 20 recorded memory snapshots. Verified identity/coordinates are displayed; unverified HP is omitted. Reads were non-atomic and are not claimed to align exactly with video frames.
+
+[![Archived coordinate and identity diagnostic](memory-observations.gif)](memory-observations.mp4)
+
+[Observation diagnostic](memory-observations.mp4) · The search adapter also has offline evidence on 103 captures. A fresh model-on-phone recording remains pending a connected device.
+
+</details>
+
+## What the experiments show
+
+![H6 evaluation-interface correction: simulator score increased from 7.4 percent to 67.2 percent without retraining](interface-result.svg)
+
+**H6 vs L10 EMA @100, native_v33:** 256 games per arm. Waiting and placement interface corrections changed the score from 7.4% to 67.2%, with unchanged weights.
+
+![Public-belief search comparison: plus 99 relative simulator Elo, reported interval plus 74 to plus 125](search-result.svg)
+
+**L10 EMA @50 with vs without search, native_v44:** 512 games; +99 relative simulator Elo, reported 95% interval [+74, +125]. [Conditions, uncertainty and limitations](EVIDENCE.md).
+
+Superhuman play is the research objective; it has not been established. Development includes AI-assisted coding and analysis. Implementation can be discussed privately with internship teams.
+
+**[GitHub profile / contact](https://github.com/24mil)**
+
+This is an unofficial project, not endorsed by Supercell. Gameplay belongs to Supercell; see the [Fan Content Policy](https://supercell.com/en/fan-content-policy/).
