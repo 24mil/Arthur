@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="overview.mp4">90-second overview</a> ·
+  <a href="https://github.com/user-attachments/assets/99e0d2b3-264c-4643-adbd-b0231399ed6f">90-second overview</a> ·
   <a href="#the-model">Model architecture</a> ·
   <a href="#learning-from-human-games">Human learning</a> ·
   <a href="#what-the-experiments-show">Results</a> ·
@@ -22,6 +22,15 @@
 </p>
 
 An end-to-end game-playing AI project by **Arthur**: battle simulation, a neural player, human-replay learning, self-play and real-game integration. I own the direction, experiments, integration and validation across the stack. **Application code, weights and datasets stay private.**
+
+
+
+<details>
+<summary><strong>90-second overview</strong></summary>
+
+https://github.com/user-attachments/assets/99e0d2b3-264c-4643-adbd-b0231399ed6f
+
+</details>
 
 ## Rust battle simulator
 
@@ -32,6 +41,13 @@ The current engine runs movement, targeting, combat, card cycles and deployment 
 [Full viewer recording](rust-engine.mp4) · L10 EMA @100, native_v45 · sped-up recorded states. Unexported fields are labeled; this is a bounded illustration, not a fidelity or strength test.
 
 <details>
+<summary><strong>Play the full Rust viewer recording</strong></summary>
+
+https://github.com/user-attachments/assets/96afc6e2-cb9e-429e-8102-88cad52d6380
+
+</details>
+
+<details>
 <summary><strong>Python prototype — historical</strong></summary>
 
 The original implementation established the inspectable simulation workflow. Rust is now the behavioral authority. This bounded, scripted scenario is shown through the same project viewer.
@@ -39,6 +55,8 @@ The original implementation established the inspectable simulation workflow. Rus
 [![Historical Python simulation in the existing replay viewer](python-prototype.gif)](python-prototype.mp4)
 
 [Full recording](python-prototype.mp4)
+
+https://github.com/user-attachments/assets/a9389d3e-4dd7-4005-85df-f6328e03005f
 
 </details>
 
@@ -59,6 +77,8 @@ These are offline diagnostic figures from actual frozen policy outputs, not a re
 
 [Full diagnostic sequence](neural-decisions.mp4) · [Inspect one decision](decision-detail.jpg)
 
+https://github.com/user-attachments/assets/10f9ac57-d099-4b6a-ad07-2058e8d5d7ed
+
 </details>
 
 ## Learning from human games
@@ -74,9 +94,13 @@ Recorded card choices, placements and ability markers feed Rust reconstruction a
 
 [Recorded-action demonstration](human-learning.mp4) · Placement markers are not recorded troop trajectories. Level 16 does not establish Ultimate Champion league.
 
+https://github.com/user-attachments/assets/47cbcdc0-0310-4629-9769-d21aa8b7e916
+
 [![Frozen opponents, exploiters and evaluation workflow](self-play.gif)](self-play.mp4)
 
 [Self-play walkthrough](self-play.mp4) · Workflow illustration; no active training run is implied.
+
+https://github.com/user-attachments/assets/b6ffd679-1089-4405-a104-108eff914514
 
 </details>
 
@@ -88,6 +112,13 @@ Candidate actions are compared through simulated futures. A public belief suppli
 
 [Full search diagnostic](engine-search.mp4) · Five-second rollouts; no additional deployments; six recorded searches with zero audited hidden reads.
 
+<details>
+<summary><strong>Play the full search diagnostic</strong></summary>
+
+https://github.com/user-attachments/assets/e68988b4-42cf-4612-857d-a65cd1d9ea90
+
+</details>
+
 ## Real-game observations and deployment
 
 The deployed observation route uses **memory-derived state**. The capture below shows the existing game interface. It is an archived **human TV Royale replay**, not the showcased model playing.
@@ -95,6 +126,13 @@ The deployed observation route uses **memory-derived state**. The capture below 
 <p align="center"><a href="deployment.mp4"><img src="deployment.gif" width="420" alt="Cropped historical TV Royale game capture; human replay, not model gameplay"></a></p>
 
 [Full capture](deployment.mp4) · Recorded 8 September 2026 · Player/clan identification cropped out.
+
+<details>
+<summary><strong>Play the archived human replay capture</strong></summary>
+
+https://github.com/user-attachments/assets/015e9fd2-325d-4407-bbda-91d5aed00e49
+
+</details>
 
 ![Observation, policy, optional search, command execution and validation boundaries](system.svg)
 
@@ -106,6 +144,8 @@ The diagnostic uses 20 recorded memory snapshots. Verified identity/coordinates 
 [![Archived coordinate and identity diagnostic](memory-observations.gif)](memory-observations.mp4)
 
 [Observation diagnostic](memory-observations.mp4) · The search adapter also has offline evidence on 103 captures. A fresh model-on-phone recording remains pending a connected device.
+
+https://github.com/user-attachments/assets/b503fc84-f226-4c89-8a98-cee8bb319ef1
 
 </details>
 
