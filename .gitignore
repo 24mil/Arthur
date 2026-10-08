@@ -1,0 +1,12 @@
+# Presentation repository only. Keep private production outside this directory.
+production/
+*.pt
+*.pth
+*.pyd
+*.dll
+*.parquet
+*.jsonl
+*.log
+*.zip
+__pycache__/
+.env*

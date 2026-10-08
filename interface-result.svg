@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="921.6pt" height="489.6pt" viewBox="0 0 921.6 489.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T20:37:44.563214</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 489.6 
+L 921.6 489.6 
+L 921.6 0 
+L 0 0 
+z
+" style="fill: #0a101a"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 156.672 381.888 
+L 884.736 381.888 
+L 884.736 117.504 
+L 156.672 117.504 
+z
+" style="fill: #0a101a"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 156.672 201.794258 
+L 210.548736 201.794258 
+L 210.548736 129.521455 
+L 156.672 129.521455 
+z
+" clip-path="url(#p841674f13c)" style="fill: #ff7888"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 156.672 369.870545 
+L 645.931008 369.870545 
+L 645.931008 297.597742 
+L 156.672 297.597742 
+z
+" clip-path="url(#p841674f13c)" style="fill: #7de2b3"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m0b95bb6f4c" d="M 0 0 
+L 0 3.5 
+" style="stroke: #9cb0c7; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m0b95bb6f4c" x="156.672" y="381.888" style="fill: #9cb0c7; stroke: #9cb0c7; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #9cb0c7" x="156.672" y="398.005187" transform="rotate(-0 156.672 398.005187)">0%</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m0b95bb6f4c" x="338.688" y="381.888" style="fill: #9cb0c7; stroke: #9cb0c7; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #9cb0c7" x="338.688" y="398.005187" transform="rotate(-0 338.688 398.005187)">25%</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m0b95bb6f4c" x="520.704" y="381.888" style="fill: #9cb0c7; stroke: #9cb0c7; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #9cb0c7" x="520.704" y="398.005187" transform="rotate(-0 520.704 398.005187)">50%</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m0b95bb6f4c" x="702.72" y="381.888" style="fill: #9cb0c7; stroke: #9cb0c7; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #9cb0c7" x="702.72" y="398.005187" transform="rotate(-0 702.72 398.005187)">75%</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m0b95bb6f4c" x="884.736" y="381.888" style="fill: #9cb0c7; stroke: #9cb0c7; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #9cb0c7" x="884.736" y="398.005187" transform="rotate(-0 884.736 398.005187)">100%</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #9cb0c7" x="520.704" y="414.006125" transform="rotate(-0 520.704 414.006125)">Simulator score against L10 EMA @100 (win + half draw)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6">
+      <defs>
+       <path id="mf0f58b0cb5" d="M 0 0 
+L -3.5 0 
+" style="stroke: #9cb0c7; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mf0f58b0cb5" x="156.672" y="165.657856" style="fill: #9cb0c7; stroke: #9cb0c7; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #9cb0c7" x="149.672" y="170.216919" transform="rotate(-0 149.672 170.216919)">Original interface</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#mf0f58b0cb5" x="156.672" y="333.734144" style="fill: #9cb0c7; stroke: #9cb0c7; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #9cb0c7" x="149.672" y="338.293206" transform="rotate(-0 149.672 338.293206)">Corrected interface</text>
+     </g>
+    </g>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 191.619072 165.657856 
+L 238.943232 165.657856 
+" clip-path="url(#p841674f13c)" style="fill: none; stroke: #edf3fa; stroke-width: 1.5"/>
+    <path d="M 602.247168 333.734144 
+L 685.246464 333.734144 
+" clip-path="url(#p841674f13c)" style="fill: none; stroke: #edf3fa; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_8">
+    <defs>
+     <path id="m099fd6126c" d="M 0 6 
+L 0 -6 
+" style="stroke: #edf3fa"/>
+    </defs>
+    <g clip-path="url(#p841674f13c)">
+     <use xlink:href="#m099fd6126c" x="191.619072" y="165.657856" style="fill: #1f77b4; stroke: #edf3fa"/>
+     <use xlink:href="#m099fd6126c" x="602.247168" y="333.734144" style="fill: #1f77b4; stroke: #edf3fa"/>
+    </g>
+   </g>
+   <g id="line2d_9">
+    <g clip-path="url(#p841674f13c)">
+     <use xlink:href="#m099fd6126c" x="238.943232" y="165.657856" style="fill: #1f77b4; stroke: #edf3fa"/>
+     <use xlink:href="#m099fd6126c" x="685.246464" y="333.734144" style="fill: #1f77b4; stroke: #edf3fa"/>
+    </g>
+   </g>
+   <g id="patch_5">
+    <path d="M 156.672 381.888 
+L 156.672 117.504 
+" style="fill: none; stroke: #25374d; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 156.672 381.888 
+L 884.736 381.888 
+" style="fill: none; stroke: #25374d; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #edf3fa" x="239.671296" y="145.488702" transform="rotate(-0 239.671296 145.488702)">7.4%</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #edf3fa" x="675.053568" y="313.564989" transform="rotate(-0 675.053568 313.564989)">67.2%</text>
+   </g>
+  </g>
+  <g id="text_11">
+   <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #edf3fa" x="55.296" y="48.96" transform="rotate(-0 55.296 48.96)">The model was unchanged. The interface was wrong.</text>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #9cb0c7" x="55.296" y="83.232" transform="rotate(-0 55.296 83.232)">H6: wait-context fields + wait semantics + card / placement decoding</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #9cb0c7" x="55.296" y="445.536" transform="rotate(-0 55.296 445.536)">256 games per arm, pooled across two episode-seed series; same 64 loadouts. Wilson 95% intervals.</text>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #9cb0c7" x="55.296" y="467.568" transform="rotate(-0 55.296 467.568)">2026-10-02 • native_v33 • simulator evidence, not human win rates</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p841674f13c">
+   <rect x="156.672" y="117.504" width="728.064" height="264.384"/>
+  </clipPath>
+ </defs>
+</svg>
