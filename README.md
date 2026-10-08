@@ -14,7 +14,7 @@ Frozen **L10 EMA @100 · Rust v45**. These are recorded simulator decisions; per
 
 ## Engineering that improved results
 
-![Interface correction and public-information search, with sample sizes and reported uncertainty](improvements.svg)
+![Interface correction and public-information search, with sample sizes and reported uncertainty](https://raw.githubusercontent.com/24mil/Arthur/3bf95a756165988f2b8d9b945dc0739386d334cb/improvements.svg)
 
 - **Fix the interface:** matching waiting and placement decoding to training changed H6's simulator score from **7.4% to 67.2%**, without retraining.
 - **Look ahead:** public-information search added **+99 simulator Elo** against the same network without search; reported 95% interval **+74 to +125**, over **512 games**.
@@ -23,7 +23,7 @@ Frozen **L10 EMA @100 · Rust v45**. These are recorded simulator decisions; per
 
 ## Neural network and learning
 
-![Observation, neural architecture, action and learning pipeline](pipeline.svg)
+![Observation, neural architecture, action and learning pipeline](https://raw.githubusercontent.com/24mil/Arthur/3bf95a756165988f2b8d9b945dc0739386d334cb/pipeline.svg)
 
 The **U-Net** processes the board. **Transformer blocks** process troops and recent events. Their features are combined; separate heads choose the action, card, placement, ability carrier and wait duration. The checkpoint has **6.67M parameters**, with **5.15M in the policy path**. A separate critic learns during training.
 
