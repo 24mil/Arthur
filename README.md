@@ -4,13 +4,21 @@ Rust simulator · Python / PyTorch · 6.67M parameters
 
 An AI player built around a **Rust battle simulator**, a neural policy and learning from human replays and self-play. My work covers system design, experiments, integration and validation across the stack.
 
+## Real gameplay
+
+**30 seconds of human play:** card selection, troop placement and combat in the real game.
+
+https://github.com/user-attachments/assets/8cd2b3d1-9001-42f7-956b-eca62e22a4c6
+
+Reference footage by [Red Guy Gameplay](https://www.youtube.com/watch?v=qXb0ZuQQqNs), used with credit. This is **human gameplay, not this AI playing**.
+
 ## Watch it choose a move
 
 **12-second demo, at 2× speed:** three card plays and one wait. Card percentages, selected placement and the resulting battle use the project's existing replay viewer.
 
 https://github.com/user-attachments/assets/3323f397-0c3a-437c-83ef-01f9fe6bc50a
 
-Frozen **L10 EMA @100 · Rust v45**. These are recorded simulator decisions; percentages describe action choices, not win chances. An annotated real-game recording will follow separately.
+Frozen **L10 EMA @100 · Rust v45**. These are recorded simulator decisions; percentages describe action choices, not win chances.
 
 ## Engineering that improved results
 
