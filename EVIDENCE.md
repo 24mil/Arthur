@@ -1,6 +1,6 @@
 # Evidence behind the presentation
 
-Snapshot reviewed for this portfolio: 8 October 2026. Completed experiments below are dated 2 October 2026. Their original reports and artifacts are retained privately.
+Presentation updated: 10 October 2026. Model and experiment snapshot reviewed: 8 October 2026. Completed experiments below are dated 2 October 2026. Their original reports and artifacts are retained privately.
 
 ## Model and demonstrations
 
@@ -16,7 +16,9 @@ The original viewer recordings and historical diagnostic assets are retained pri
 
 The memory clip uses 20 archived snapshots from a TV Royale capture dated 8 September 2026. It displays troop identities and coordinates, omits unverified HP and ability semantics, and identifies the reads as non-atomic. It does not claim frame-accurate screen alignment.
 
-The phone footage is cropped from the same historical TV Royale recording to remove player/clan identification. It is **human replay capture footage, not footage of the showcased model playing**. The separate deployment diagram describes the harness. A fresh model-on-phone recording is deferred at the owner’s request. No device was connected during this edit; the continuous-play pause was preserved. It will use matching card, placement and probability annotations when captured.
+The README now opens with a **30-second human-gameplay reference** by [Red Guy Gameplay](https://www.youtube.com/watch?v=qXb0ZuQQqNs), originally published 31 August 2025. It shows the normal player hand, card selection and troop placement, rather than TV Royale replay controls. This is third-party footage: **neither Arthur nor this project's AI is the player**. The excerpt covers source-video seconds 8–38; it has no additional speed change, no audio, a player/clan-name mask, and small human-gameplay/source labels. It is encoded as H.264 at 30 fps. No policy probabilities, memory observations or AI-control claims are added to this footage.
+
+The creator's video description explicitly permits reuse with credit and prohibits republishing it as a stock “No Copyright Gameplay” offering. This portfolio uses a credited excerpt to illustrate the game; it does not claim a specific Creative Commons license version, ownership of the recording, or creator endorsement. The full source is linked above. A current model-on-phone recording is not included; the updated game client's compatibility with the existing observation reader remains unresolved. The earlier TV Royale capture is retained privately as historical material.
 
 The human-learning diagram and action illustration describe recorded commands and reconstructed training contexts. Reconstruction uncertainty, supported prefixes and component-specific validity matter; a recorded card action does not provide a complete observed board. Level-16 cards alone do not establish Ultimate Champion league.
 
