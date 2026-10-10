@@ -6,11 +6,9 @@ An AI player built around a **Rust battle simulator**, a neural policy and learn
 
 ## Real gameplay
 
-**30 seconds of human play:** card selection, troop placement and combat in the real game.
+**18-second human gameplay edit:** three placements — Goblinstein, Firecracker and Hog Rider — followed by their battle response.
 
-https://github.com/user-attachments/assets/8cd2b3d1-9001-42f7-956b-eca62e22a4c6
-
-Reference footage by [Red Guy Gameplay](https://www.youtube.com/watch?v=qXb0ZuQQqNs), used with credit. This is **human gameplay, not this AI playing**.
+https://github.com/user-attachments/assets/1e25c6cf-c03e-4b53-a444-fc6ba0259419
 
 ## Watch it choose a move
 
