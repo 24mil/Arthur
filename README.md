@@ -8,11 +8,9 @@ An AI player built around a **Rust battle simulator**, a neural policy and learn
 
 https://github.com/user-attachments/assets/3323f397-0c3a-437c-83ef-01f9fe6bc50a
 
-<a id="real-gameplay"></a>
-
-## Human gameplay
-
-https://github.com/user-attachments/assets/1e25c6cf-c03e-4b53-a444-fc6ba0259419
+- **Observe:** the model receives structured board features, troops, resources and recent events. The arena shows the corresponding simulated battle.
+- **Choose:** percentages show the model's action probabilities. Card percentages assume it chooses to play; they are not win probabilities.
+- **Execute:** the selected card and highlighted placement become a command in the Rust engine. Waiting and abilities are decisions too.
 
 ## Engineering that improved results
 
@@ -32,5 +30,13 @@ The **U-Net** processes the board. **Transformer blocks** process troops and rec
 Human replays teach decisions; PPO self-play develops them further. Rust replaced the historical Python engine. Real-game integration uses memory-derived observations.
 
 **Implementation, weights and datasets remain private**, available for discussion with internship teams. Development includes AI-assisted coding and analysis. [Contact Arthur](https://github.com/24mil).
+
+<a id="real-gameplay"></a>
+
+## Real-game interface
+
+The deployment system connects memory-derived game state to the policy, then sends its chosen card and position to the phone. This footage is human-controlled.
+
+https://github.com/user-attachments/assets/1e25c6cf-c03e-4b53-a444-fc6ba0259419
 
 <sub>Unofficial project, not endorsed by Supercell. [Fan Content Policy](https://supercell.com/en/fan-content-policy/).</sub>
