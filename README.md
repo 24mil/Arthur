@@ -4,6 +4,12 @@ Rust simulator · Python / PyTorch · 6.67M parameters
 
 An AI player built around a **Rust battle simulator**, a neural policy and learning from human replays and self-play. My work covers system design, experiments, integration and validation across the stack.
 
+## Live ranked match — 2× speed
+
+H6 with test-time search, playing on a real phone. The annotations distinguish the model’s choices, search changes and vetoed plays. On-screen timestamps remain in original game time.
+
+https://github.com/user-attachments/assets/719f965b-5097-4745-bba3-266d3dd1221f
+
 ## Watch it choose a move
 
 https://github.com/user-attachments/assets/3323f397-0c3a-437c-83ef-01f9fe6bc50a
