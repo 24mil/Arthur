@@ -18,11 +18,7 @@ The original viewer recordings and historical diagnostic assets are retained pri
 
 The memory clip uses 20 archived snapshots from a TV Royale capture dated 8 September 2026. It displays troop identities and coordinates, omits unverified HP and ability semantics, and identifies the reads as non-atomic. It does not claim frame-accurate screen alignment.
 
-The **real-game interface section**, at the bottom of the README, uses human footage by **The Shorter**, from [NO COPYRIGHT GAMEPLAY - CLASH ROYALE](https://www.youtube.com/watch?v=UI3RbEXtW0E), published 28 March 2025. The creator offers the recording as no-copyright/free gameplay in its title and description. Credit belongs to The Shorter; no specific Creative Commons license version or creator endorsement is claimed.
-
-Three six-second excerpts start at source times 18.20, 25.35 and 32.65 seconds. They show committed Goblinstein, Firecracker and Hog Rider placements, followed by their immediate battle response. This is an edited sequence, not continuous play. The export preserves source playback speed, uses H.264 at 60 fps, removes audio and masks the opponent name and clan. The gameplay fills the frame without added title bars. **The player is neither Arthur nor this project's AI.** No model probabilities or memory observations are attached to the human footage. The previous opening clip is superseded.
-
-The H6 model-on-phone recording is now included separately at the top of the README. The human-controlled footage at the bottom remains a distinct interface illustration. The earlier TV Royale capture is retained privately as historical material.
+The gameplay-only human footage was removed from the current README and file list on 12 October 2026. The earlier TV Royale capture remains private historical material. The H6 model-on-phone recording is the current real-game demonstration.
 
 The human-learning diagram and action illustration describe recorded commands and reconstructed training contexts. Reconstruction uncertainty, supported prefixes and component-specific validity matter; a recorded card action does not provide a complete observed board. Level-16 cards alone do not establish Ultimate Champion league.
 

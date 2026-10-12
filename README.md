@@ -37,12 +37,4 @@ Human replays teach decisions; PPO self-play develops them further. Rust replace
 
 **Implementation, weights and datasets remain private**, available for discussion with internship teams. Development includes AI-assisted coding and analysis. [Contact Arthur](https://github.com/24mil).
 
-<a id="real-gameplay"></a>
-
-## Real-game interface
-
-The deployment system connects memory-derived game state to the policy, then sends its chosen card and position to the phone. This footage is human-controlled.
-
-https://github.com/user-attachments/assets/1e25c6cf-c03e-4b53-a444-fc6ba0259419
-
 <sub>Unofficial project, not endorsed by Supercell. [Fan Content Policy](https://supercell.com/en/fan-content-policy/).</sub>
